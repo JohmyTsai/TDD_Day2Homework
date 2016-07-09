@@ -38,7 +38,7 @@ namespace TDD_Day2_HW
                 }
 
                 Total += GetSetSum(SetType);
-                SetType++;
+                SetType = 0;
             }
 
             return Total;
