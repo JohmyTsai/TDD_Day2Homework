@@ -1,10 +1,14 @@
-﻿using System;
+﻿using Book;
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
 
-namespace TDD_Day2_HW
+namespace ShoppingCart
 {
-    internal class Calculater
+    public class Calculater
     {
-        internal int Sum(Potter order)
+        public int Sum(Potter order)
         {
             int Total = 0;
             int SetType = 0;

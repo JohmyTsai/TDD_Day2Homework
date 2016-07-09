@@ -1,6 +1,11 @@
-﻿namespace TDD_Day2_HW
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+
+namespace Book
 {
-    internal class Potter
+    public class Potter
     {
         public int Fifth { get; set; }
         public int First { get; set; }

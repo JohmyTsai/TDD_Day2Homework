@@ -53,13 +53,21 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="Calculater.cs" />
-    <Compile Include="Potter.cs" />
     <Compile Include="UnitTest1.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="User Story.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Calculater\Calculater.csproj">
+      <Project>{37e4847b-73ac-4ab1-a1f1-7eba4663a7b9}</Project>
+      <Name>Calculater</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Potter.cs\Potter.cs.csproj">
+      <Project>{9d481397-4389-4272-8a4a-210be23845d3}</Project>
+      <Name>Potter.cs</Name>
+    </ProjectReference>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

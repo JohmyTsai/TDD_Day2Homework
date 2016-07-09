@@ -1,4 +1,6 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
+﻿using Book;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using ShoppingCart;
 using System;
 
 namespace TDD_Day2_HW
