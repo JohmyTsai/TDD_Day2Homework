@@ -71,5 +71,27 @@ namespace TDD_Day2_HW
             //Assert
             Assert.AreEqual(expect, actual);
         }
+
+        [TestMethod]
+        public void Buy_1_The_First_And_Second_And_Third_And_Fourth_Potter()
+        {
+            //Arrage
+            var order = new Potter
+            {
+                First = 1,
+                Second = 1,
+                Third = 1,
+                Fourth = 1,
+                Fifth = 0
+            };
+            int expect = 320;
+
+            //Act
+            Calculater target = new Calculater();
+            int actual = target.Sum(order);
+
+            //Assert
+            Assert.AreEqual(expect, actual);
+        }
     }
 }
