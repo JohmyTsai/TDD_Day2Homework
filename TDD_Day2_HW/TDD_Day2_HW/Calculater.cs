@@ -64,6 +64,10 @@ namespace TDD_Day2_HW
                     // Set4 100 * 4 * 0.8 = 320
                     return 320;
 
+                case 5:
+                    // Set5 100 * 5 * 0.75 = 375
+                    return 375;
+
                 default:
                     return 0;
             }
