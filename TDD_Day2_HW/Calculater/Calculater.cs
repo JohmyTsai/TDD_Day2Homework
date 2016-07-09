@@ -10,42 +10,42 @@ namespace ShoppingCart
     {
         public int Sum(Potter order)
         {
-            int Total = 0;
-            int SetType = 0;
+            int total = 0;
+            int setType = 0;
 
             while (order.First != 0 || order.Second != 0 || order.Third != 0 || order.Fourth != 0 || order.Fifth != 0)
             {
                 if (order.First != 0)
                 {
                     order.First--;
-                    SetType++;
+                    setType++;
                 }
                 if (order.Second != 0)
                 {
                     order.Second--;
-                    SetType++;
+                    setType++;
                 }
                 if (order.Third != 0)
                 {
                     order.Third--;
-                    SetType++;
+                    setType++;
                 }
                 if (order.Fourth != 0)
                 {
                     order.Fourth--;
-                    SetType++;
+                    setType++;
                 }
                 if (order.Fifth != 0)
                 {
                     order.Fifth--;
-                    SetType++;
+                    setType++;
                 }
 
-                Total += GetSetSum(SetType);
-                SetType = 0;
+                total += GetSetSum(setType);
+                setType = 0;
             }
 
-            return Total;
+            return total;
         }
 
         private int GetSetSum(int setType)
