@@ -12,7 +12,7 @@ namespace TDD_Day2_HW
             //Arrage
             var order = new Potter
             {
-                First = 0,
+                First = 1,
                 Second = 0,
                 Third = 0,
                 Fourth = 0,
